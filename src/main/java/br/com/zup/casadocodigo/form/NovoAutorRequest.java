@@ -26,7 +26,7 @@ public class NovoAutorRequest {
 	
 	/**
 	 * 
-	 * @return Método responável retornar um objeto do tipo Autor com os atributos passados na requisição.
+	 * @return Método responsável por retornar um objeto do tipo Autor com os atributos passados na requisição.
 	 */
 	public Autor toModel() {
 		return new Autor(this.nome, this.email, this.descricao);
