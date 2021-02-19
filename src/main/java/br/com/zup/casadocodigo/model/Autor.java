@@ -28,7 +28,6 @@ public class Autor {
 	
 	@Deprecated
 	public Autor() {
-		
 	}
 	
 	public Autor(@NotBlank String nome, @NotBlank @Email String email, 
