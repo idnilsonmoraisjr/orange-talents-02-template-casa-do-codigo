@@ -2,7 +2,7 @@ package br.com.zup.casadocodigo.dto;
 
 import br.com.zup.casadocodigo.model.Autor;
 
-public class NovoAutorDto {
+public class AutorResponse {
 
 	private Long id;
 	private String nome;
@@ -10,7 +10,7 @@ public class NovoAutorDto {
 	private String descricao;
 	private String instanteCriacao;
 	
-	public NovoAutorDto(Autor autor) {
+	public AutorResponse(Autor autor) {
 		this.id = autor.getId();
 		this.nome = autor.getNome();
 		this.email = autor.getEmail();
@@ -40,7 +40,7 @@ public class NovoAutorDto {
 
 	@Override
 	public String toString() {
-		return "NovoAutorDto [id=" + id + ", nome=" + nome + ", email=" + email + ", descricao=" + descricao
+		return "AutorResponse [id=" + id + ", nome=" + nome + ", email=" + email + ", descricao=" + descricao
 				+ ", instanteCriacao=" + instanteCriacao + "]";
 	}	
 }

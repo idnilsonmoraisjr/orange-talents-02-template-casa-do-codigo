@@ -15,13 +15,16 @@ import javax.validation.constraints.Size;
 @Entity
 public class Autor {
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@NotBlank
 	private String nome;
-	@NotBlank @Email
+	@NotBlank 
+	@Email
 	private String email;
-	@NotBlank @Size(max = 400)
+	@NotBlank 
+	@Size(max = 400)
 	private String descricao;
 	@NotNull
 	private LocalDateTime instanteRegistro = LocalDateTime.now();
@@ -62,7 +65,6 @@ public class Autor {
 	}
 
 	public String formataInstanteDeRegistro() {
-		
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 		String instanteRegistroFormatado = instanteRegistro.format(formatter);
 		return instanteRegistroFormatado;

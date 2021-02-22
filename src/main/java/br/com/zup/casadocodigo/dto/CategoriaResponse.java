@@ -2,12 +2,12 @@ package br.com.zup.casadocodigo.dto;
 
 import br.com.zup.casadocodigo.model.Categoria;
 
-public class CategoriaDto {
+public class CategoriaResponse{
 
 	private Long id;
 	private String nome;
 	
-	public CategoriaDto(Categoria categoria) {
+	public CategoriaResponse(Categoria categoria) {
 		this.id = categoria.getId();
 		this.nome = categoria.getNome();
 	}
@@ -22,6 +22,6 @@ public class CategoriaDto {
 
 	@Override
 	public String toString() {
-		return "CategoriaDto [id=" + id + ", nome=" + nome + "]";
+		return "CategoriaResponse [id=" + id + ", nome=" + nome + "]";
 	}
 }
