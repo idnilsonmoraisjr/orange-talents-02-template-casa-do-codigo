@@ -28,4 +28,6 @@ public class AutorController {
 		manager.persist(autor);
 		return new AutorResponse(autor).toString();
 	}
+	
+	
 }

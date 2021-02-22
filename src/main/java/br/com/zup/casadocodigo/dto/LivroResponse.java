@@ -30,7 +30,7 @@ public class LivroResponse {
 		this.categoria = new CategoriaResponse(livro.getCategoria());
 		this.autor = new AutorResponse(livro.getAutor());
 	}
-
+	
 	public Long getId() {
 		return id;
 	}
