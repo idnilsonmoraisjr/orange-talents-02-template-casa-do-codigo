@@ -22,7 +22,8 @@ import br.com.zup.casadocodigo.model.Livro;
 
 public class NovoLivroRequest {
 	
-	@NotBlank @UniqueValue(domainClass = Livro.class,fieldName="titulo")
+	@NotBlank
+	@UniqueValue(domainClass = Livro.class,fieldName="titulo")
 	private String titulo;
 	@NotBlank 
 	@Size(max = 500)
