@@ -22,7 +22,7 @@ public class PaisResponse {
 
 	@Override
 	public String toString() {
-		return "Pais [id=" + id + ", nome=" + nome + "]";
+		return "País [id=" + id + ", nome=" + nome + "]";
 	}
 
 	

@@ -73,7 +73,7 @@ public class LivroResponse {
 
 	@Override
 	public String toString() {
-		return "LivroResponse [id=" + id + ", titulo=" + titulo + ", resumo=" + resumo + ", sumario=" + sumario
+		return "Livro [id=" + id + ", titulo=" + titulo + ", resumo=" + resumo + ", sumario=" + sumario
 				+ ", preco=" + preco + ", numeroPaginas=" + numeroPaginas + ", isbn=" + isbn + ", dataDePublicacao="
 				+ dataDePublicacao + ", categoria=" + categoria + ", autor=" + autor + "]";
 	}

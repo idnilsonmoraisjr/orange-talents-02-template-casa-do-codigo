@@ -39,4 +39,15 @@ public class Estado {
 	public Pais getPais() {
 		return pais;
 	}
+
+	/**
+	 * 
+	 * @return Método responsável por verificar se Estado pertence a país.
+	 */
+	public boolean pertenceAo(Pais pais) {
+		if(this.getPais().equals(pais)) {
+			return true;
+		}
+		return false;
+	}
 }

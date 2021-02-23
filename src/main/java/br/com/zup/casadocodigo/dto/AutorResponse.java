@@ -40,7 +40,7 @@ public class AutorResponse {
 
 	@Override
 	public String toString() {
-		return "AutorResponse [id=" + id + ", nome=" + nome + ", email=" + email + ", descricao=" + descricao
+		return "Autor [id=" + id + ", nome=" + nome + ", email=" + email + ", descricao=" + descricao
 				+ ", instanteCriacao=" + instanteCriacao + "]";
 	}	
 }
