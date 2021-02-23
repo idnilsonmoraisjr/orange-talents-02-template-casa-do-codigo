@@ -68,10 +68,6 @@ public class Livro {
 		return preco;
 	}
 
-	public void setPreco(BigDecimal preco) {
-		this.preco = preco;
-	}
-
 	public Long getId() {
 		return id;
 	}

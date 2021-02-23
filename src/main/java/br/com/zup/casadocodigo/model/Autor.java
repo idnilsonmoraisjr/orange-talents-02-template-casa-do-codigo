@@ -51,22 +51,13 @@ public class Autor {
 	public String getEmail() {
 		return email;
 	}
-	
-	public void setEmail(String email) {
-		this.email = email;
-	}
 
 	public String getDescricao() {
 		return descricao;
 	}
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
-
-	public String formataInstanteDeRegistro() {
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-		String instanteRegistroFormatado = instanteRegistro.format(formatter);
-		return instanteRegistroFormatado;
+	public String formataInstanteDeRegistro(String pattern) {
+		return this.instanteRegistro
+				.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
 	}
 }

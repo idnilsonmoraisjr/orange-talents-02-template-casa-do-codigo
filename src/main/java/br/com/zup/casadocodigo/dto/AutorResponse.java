@@ -15,7 +15,7 @@ public class AutorResponse {
 		this.nome = autor.getNome();
 		this.email = autor.getEmail();
 		this.descricao = autor.getDescricao();
-		this.instanteCriacao = autor.formataInstanteDeRegistro();
+		this.instanteCriacao = autor.formataInstanteDeRegistro("dd/MM/yyyy HH:mm:ss");
 	}
 		
 	public Long getId() {

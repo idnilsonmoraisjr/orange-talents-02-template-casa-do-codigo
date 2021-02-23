@@ -19,7 +19,7 @@ import br.com.zup.casadocodigo.model.Categoria;
 public class CategoriaController {
 
 	@PersistenceContext
-	EntityManager manager;
+	private EntityManager manager;
 	
 	@PostMapping
 	@Transactional

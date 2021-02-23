@@ -19,7 +19,7 @@ import br.com.zup.casadocodigo.model.Autor;
 public class AutorController {
 
 	@PersistenceContext
-	EntityManager manager;
+	private EntityManager manager;
 
 	@PostMapping
 	@Transactional
